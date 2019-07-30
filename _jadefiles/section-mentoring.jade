@@ -1,0 +1,16 @@
+mixin face(face, words, name)
+  li.face(style="background-image: url(/assets/img/testimonial-avatars/#{face});")
+    .bubble
+      p #{words}
+      cite — #{name}
+
+section.mentoring#mentoring
+  .flex.flex--center
+    .col-1
+      ul.faces
+        +face("brian.jpg","Steve helped me create a responsive website for my catering business with custom menu and contact form, very happy with his work.","Brian Duncan")
+        li.back-btn.face
+
+    .col-1
+      p.home-lead.outdented ...What my clients think..
+      a(href="").home-cta Schedule a Call

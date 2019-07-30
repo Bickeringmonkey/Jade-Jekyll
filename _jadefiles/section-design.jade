@@ -1,0 +1,26 @@
+mixin design-img(link, img, color)
+  a(href="#{link}" data-color="#{color}").design-img-link
+    img(src="assets/img/design-img/#{img}")
+
+section.design#design
+  .flex.flex--center
+    .col-50.flex.flex--center.dribbble(data-orig-color="#ea4c89")
+      .col-1
+        p.home-lead ...Updating Live Websites...
+        +design-img('http://stras.stevemeadows.co.uk/', 'stras.png', 'orange')
+        +design-img('http://wordpress2.stevemeadows.co.uk/', 'explore.png', '#aeb3b0')
+        +design-img('http://shop2.stevemeadows.co.uk/', 'store.png', 'orange')
+        +design-img('http://blog1.stevemeadows.co.uk/', 'blog1.png', 'orange')
+
+        .cf
+        a(href="https://stevemeadows.co.uk/livewebsites").home-cta See more on Live Websites
+
+    .col-50.flex.flex--center.behance(data-orig-color="#1769ff")
+      .col-1
+        p.home-lead ...and Behance...
+        +design-img('https://www.behance.net/gallery/52090929/stark-website', 'starkthumb.png', '#5aabd5')
+        +design-img('https://www.behance.net/gallery/52091055/Pet-shop', 'petshop.png', '#d32022')
+        +design-img('https://www.behance.net/gallery/53002585/Ecommerce-Site-Slider-Header', 'store.png', '#d32022')
+
+        .cf
+        a(href="https://www.behance.net/smeadows117e30").home-cta See more on Behance
